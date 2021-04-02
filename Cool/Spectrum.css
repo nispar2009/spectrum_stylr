@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 22px;
+}
+
+.btn {
+    padding: 15px 40px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    user-select: none;
+    text-decoration: none;
+    color: white;
+    outline: none;
+    background-color:blue;
+}
+.btn:hover {
+    transition: 0.2s;
+    background-color: darkblue;
+}
+
+.section-bg {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:lightgrey;
+}
+.section-blank {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: none;
+}
+
+h1.heading {
+    color:darkblue;
+}
+h2.heading {
+    color: blue;
+}
+
+.footer {
+    width: 100%;
+    display: block;
+    bottom: 0;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:lightgrey;
+}
+.footer .footer-link {
+    color: blue;
+}
+.footer .footer-link:hover {
+    transition: 0.2s;
+    color:darkblue;
+}
+
+.nav-desktop {
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    top: 0;
+    background-color: blue;
+}
+.nav-desktop-link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 60px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+}
+.nav-desktop-link:hover {
+    background-color:darkblue;
+}
+.nav-desktop-item {display: inline;}
+.nav-desktop-brand {
+    font-size: 40px;
+}
+
+.form {
+    outline: none;
+    background-color: lightgrey;
+    border: none;
+}
+input.form {
+    height: 50px;
+    width: 1000px;
+    font-size: large;
+}
+.btn.btn-submit {padding: 15px 100px}
+textarea.form {
+    width: 1000px;
+    font-size: large;
+    height: 100px;
+    resize: none;
+}
+select.form {
+    height: 50px;
+    width: 1000px;
+    font-size: large;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .nav-desktop {display: none;}
+    .nav-mobile {
+        display: block;
+        overflow: hidden;
+    }
+    input.form {width: 300px;}
+    select.form {width: 300px;}
+    textarea.form {width: 300px;}
+    table.table td, table.table th {padding: 10px 25px;}
+}
+@media only screen and (min-width: 1025px) {
+    .nav-mobile {display: none}
+    table.table td, table.table th {padding: 10px 50px;}
+    /* padding: 10px 50px; */
+}
+
+.hover-all {
+    display: inline-block;
+}
+.hover-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 50px;
+    background-color: darkblue;
+    color: white;
+}
+.hover-all:hover .hover-content {
+    display: block;
+}
+.hover-all .hover-content .hover-link {
+    color: white;
+    font-display: block;
+}
+
+table.table {
+    border-collapse: collapse;
+}
+table.table td {
+    border: 4px solid blue;
+    text-align: center;
+    color: blue;
+}
+table.table th {
+    border: 4px solid darkblue;
+    text-align: center;
+    color:darkblue;
+}
+
+.col {column-count: 2;}
+
+.nav-mobile-brand {float: left; font-size: 40px; color: blue; text-decoration: none;}
+.nav-mobile-right {float: right}
+.nav-mobile-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 50px;
+    /* right: 0; */
+    background-color: blue;
+}
+.nav-mobile-right .nav-mobile-content {right: 0;}
+.nav-mobile-link {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.nav-mobile-brand:active {
+    color: darkblue;
+}
+
+.n-m-show {display: block;}
+
+input[type=radio].form {
+    width: initial;
+    height: initial;
+}
+input[type=checkbox].form {
+    width: initial;
+    height: initial;
+}
+
+.link {color: blue;}
+.link:hover {color: darkblue;}

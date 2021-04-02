@@ -1,0 +1,457 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+}
+.btn {
+    padding: 15px 40px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    user-select: none;
+    text-decoration: none;
+    outline: none;
+}
+.btn.btn-black {
+    color: white;
+    background-color: black;
+}
+.btn.btn-red {
+    color: white;
+    background-color: red;
+}
+.btn.btn-blue {
+    color: white;
+    background-color: dodgerblue;
+}
+.btn.btn-green {
+    color: white;
+    background-color: #21c700;
+}
+.btn.btn-yellow {
+    color: white;
+    background-color: gold;
+}
+.btn.btn-orange {
+    color: white;
+    background-color: orange;
+}
+.btn.btn-purple {
+    color: white;
+    background-color: #7300ff;
+}
+.btn.btn-grey {
+    color: white;
+    background-color: grey;
+}
+.btn.btn-sm {
+    padding: 7px 15px;
+    font-size: 7px;
+}
+.text-red {
+    color: red;
+}
+.text-blue {
+    color: dodgerblue;
+}
+.text-white {
+    color: white;
+}
+.text-green {
+    color: #21c700;
+}
+.text-yellow {
+    color: gold;
+}
+.text-orange {
+    color: orange;
+}
+.text-purple {
+    color: #7300ff;
+}
+.text-grey {
+    color: grey;
+}
+.hover-all {
+    display: inline-block;
+}
+.hover-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 50px;
+    background-color: #e0e0e0;
+}
+.hover-all:hover .hover-content {
+    display: block;
+}
+.link {
+    color: dodgerblue;
+    text-decoration: none;
+}
+.link:hover {
+    text-decoration: underline;
+}
+.nav-desktop {
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    top: 0;
+}
+.nav-desktop-link {
+    color: red;
+    text-decoration: none;
+    display: block;
+    padding: 60px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+}
+.nav-desktop-link:hover {
+    color: orange;
+}
+.bg-light {
+    background-color: #e0e0e0;
+}
+.bg-dark {
+    background-color: #404040;
+}
+.nav-desktop-item {display: inline;}
+.nav-desktop-brand {
+    font-size: 40px;
+}
+.hover-link {
+    display: block;
+    color: black;
+    text-decoration: none;
+    
+}
+.hover-link:hover {
+    color: grey;
+}
+.text-center {
+    text-align: center;
+}
+.table-active td, .table-active th {
+    border: 4px solid black;
+    text-align: center;
+    user-select: none;
+    padding: 10px 50px;
+}
+.table-active td:hover, .table-active th:hover {
+    border: 4px solid red;
+    color: red;
+}
+.table {
+    border-collapse: collapse;
+}
+.table td, .table th {
+    border: 4px solid black;
+    text-align: center;
+    padding: 10px 50px;
+}
+.text-right {
+    text-align: right;
+}
+.text-justify {
+    text-align: justify;
+}
+.text-left {
+    text-align: left;
+}
+.btn.btn-red-outline {
+    color: red;
+    background-color: transparent;
+    border: 2px solid red;
+}
+.btn.btn-black-outline {
+    color: black;
+    background-color: transparent;
+    border: 2px solid black;
+}
+.btn.btn-blue-outline {
+    color: dodgerblue;
+    background-color: transparent;
+    border: 2px solid dodgerblue;
+}
+.btn.btn-green-outline {
+    color: #21c700;
+    background-color: transparent;
+    border: 2px solid #21c700;
+}
+.btn.btn-yellow-outline {
+    color: gold;
+    background-color: transparent;
+    border: 2px solid gold;
+}
+.btn.btn-orange-outline {
+    color: orange;
+    background-color: transparent;
+    border: 2px solid orange;
+}
+.btn.btn-purple-outline {
+    color: #7300ff;
+    background-color: transparent;
+    border: 2px solid #7300ff;
+}
+.btn.btn-grey-outline {
+    color: grey;
+    background-color: transparent;
+    border: 2px solid grey;
+}
+.btn.btn-red-outline:hover {
+    color: white;
+    
+    background-color: red;
+}
+.btn.btn-black-outline:hover {
+    color: white;
+    
+    background-color: black;
+}
+.btn.btn-blue-outline:hover {
+    color: white;
+    
+    background-color: dodgerblue;
+}
+.btn.btn-green-outline:hover {
+    color: white;
+    
+    background-color: #21c700;
+}
+.btn.btn-yellow-outline:hover {
+    color: white;
+    
+    background-color: gold;
+}
+.btn.btn-orange-outline:hover {
+    color: white;
+    
+    background-color: orange;
+}
+.btn.btn-purple-outline:hover {
+    color: white;
+    
+    background-color: #7300ff;
+}
+.btn.btn-grey-outline:hover {
+    color: white;
+    
+    background-color: grey;
+}
+.btn.btn-rounded {
+    border-radius: 20px;
+}
+.textarea-input {
+    border-radius: 12px;
+    border: 3px solid black;
+    width: 100%;
+    height: 70%;
+}
+.sidebar {
+    top: 0;
+    left: 0;
+    width: 200px;
+    position: fixed;
+    overflow-y: hidden;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    height: 100%;
+}
+.col-3 {
+    column-count: 3;
+}
+.col-2 {
+    column-count: 2;
+}
+.col-4 {
+    column-count: 4;
+}
+.side-link {
+    color: red;
+    text-decoration: none;
+    display: block;
+    font-size: 30px;
+    
+}
+.side-brand {
+    font-size: 40px;
+}
+.side-link:hover {
+    color: orange;
+}
+.main {
+    margin-left: 205px;
+}
+.footer {
+    width: 100%;
+    display: block;
+    bottom: 0;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+}
+.footer .footer-link {
+    color: white;
+    text-decoration: none;
+    
+}
+.footer .footer-link:hover {
+    color: silver;
+}
+.section-light {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #e0e0e0;
+}
+.section-dark {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 20px;
+    color: white;
+    padding-bottom: 20px;
+    background-color: #404040;
+}
+.form {outline: none;}
+@media only screen and (max-width: 1024px) {
+    .nav-desktop {display: none;}
+    .nav-mobile {
+        display: block;
+        overflow: hidden;
+    }
+    input.form {width: 300px;}
+    select.form {width: 300px;}
+    textarea.form {width: 300px;}
+}
+@media only screen and (min-width: 1025px) {
+    .nav-mobile {display: none}
+}
+.nav-mobile-brand {float: left; font-size: 40px; color: red; text-decoration: none;}
+.nav-mobile-right {float: right}
+#nav-mobile-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 50px;
+    right: 0;
+    background-color: black;
+    color: white;
+}
+.nav-mobile-link {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.nav-mobile-brand:active {
+    color: orange;
+}
+input.form {
+    height: 50px;
+    width: 1000px;
+    font-size: large;
+    border: 3px solid black;
+}
+.btn.btn-submit {padding: 15px 100px}
+textarea.form {
+    width: 1000px;
+    font-size: large;
+    border: 3px solid black;
+    height: 100px;
+    resize: none;
+}
+select.form {
+    height: 50px;
+    width: 1000px;
+    font-size: large;
+    border: 3px solid black;
+}
+.btn.btn-red-click {
+    box-shadow: 0px 7px darkred;
+    background-color: red;
+    border: none;
+    color: white;
+}
+.btn.btn-red-click:active {
+    box-shadow: 0px 4px darkred;
+    transform: translateY(3px);
+}
+.btn.btn-blue-click {
+    box-shadow: 0px 7px blue;
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+}
+.btn.btn-blue-click:active {
+    box-shadow: 0px 4px blue;
+    transform: translateY(3px);
+}
+.btn.btn-green-click {
+    box-shadow: 0px 7px green;
+    background-color: #21c700;
+    border: none;
+    color: white;
+}
+.btn.btn-green-click:active {
+    box-shadow: 0px 4px green;
+    transform: translateY(3px);
+}
+.btn.btn-yellow-click {
+    box-shadow: 0px 7px goldenrod;
+    background-color: gold;
+    border: none;
+    color: white;
+}
+.btn.btn-yellow-click:active {
+    box-shadow: 0px 4px goldenrod;
+    transform: translateY(3px);
+}
+.btn.btn-grey-click {
+    box-shadow: 0px 7px black;
+    background-color: grey;
+    border: none;
+    color: white;
+}
+.btn.btn-grey-click:active {
+    box-shadow: 0px 4px black;
+    transform: translateY(3px);
+}
+.btn.btn-purple-click {
+    box-shadow: 0px 7px purple;
+    background-color: #7300ff;
+    border: none;
+    color: white;
+}
+.btn.btn-purple-click:active {
+    box-shadow: 0px 4px purple;
+    transform: translateY(3px);
+}
+.btn.btn-orange-click {
+    box-shadow: 0px 7px orangered;
+    background-color: orange;
+    border: none;
+    color: white;
+}
+.btn.btn-orange-click:active {
+    box-shadow: 0px 4px orangered;
+    transform: translateY(3px);
+}
+
+.n-m-show {display: block;}
+input[type=radio].form {
+    width: initial;
+    height: initial;
+}
+input[type=checkbox].form {
+    width: initial;
+    height: initial;
+}
