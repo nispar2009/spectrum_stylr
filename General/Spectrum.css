@@ -457,7 +457,13 @@ input[type=checkbox].form {
 }
 
 input.form.form-line {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+textarea.form.form-line {
+    border-bottom: 2px solid black;
     border-top: none;
     border-left: none;
     border-right: none;
