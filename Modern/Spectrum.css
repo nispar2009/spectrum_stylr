@@ -92,19 +92,19 @@ h2.heading {
 }
 input.form {
     height: 50px;
-    width: 1000px;
+    width: 300px;
     font-size: large;
 }
 .btn.btn-submit {padding: 15px 100px}
 textarea.form {
-    width: 1000px;
+    width: 300px;
     font-size: large;
     height: 100px;
     resize: none;
 }
 select.form {
     height: 50px;
-    width: 1000px;
+    width: 300px;
     font-size: large;
 }
 

@@ -357,13 +357,13 @@ body {
 }
 input.form {
     height: 50px;
-    width: 1000px;
+    width: 300px;
     font-size: large;
     border: 3px solid black;
 }
 .btn.btn-submit {padding: 15px 100px}
 textarea.form {
-    width: 1000px;
+    width: 300px;
     font-size: large;
     border: 3px solid black;
     height: 100px;
@@ -371,7 +371,7 @@ textarea.form {
 }
 select.form {
     height: 50px;
-    width: 1000px;
+    width: 300px;
     font-size: large;
     border: 3px solid black;
 }
@@ -454,4 +454,11 @@ input[type=radio].form {
 input[type=checkbox].form {
     width: initial;
     height: initial;
+}
+
+input.form.form-line {
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
