@@ -335,7 +335,7 @@ body {
 }
 .nav-mobile-brand {float: left; font-size: 40px; color: red; text-decoration: none;}
 .nav-mobile-right {float: right}
-#nav-mobile-content {
+.nav-mobile-content {
     display: none;
     position: absolute;
     min-width: 160px;
