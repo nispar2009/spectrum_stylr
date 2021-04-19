@@ -343,7 +343,7 @@ body {
     padding-top: 10px;
     padding-left: 10px;
     padding-bottom: 50px;
-    /* right: 0; */
+    right: 0;
     background-color: black;
     color: white;
 }
