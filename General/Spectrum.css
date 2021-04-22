@@ -468,3 +468,13 @@ textarea.form.form-line {
     border-left: none;
     border-right: none;
 }
+
+table.table {
+    border-collapse: collapse;
+    border: 1px solid lightgrey;
+}
+table.table tr:nth-child(odd) {
+    border: none;
+    text-align: center;
+    background-color: lightgrey;
+}
