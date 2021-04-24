@@ -158,8 +158,10 @@ table.table {
 }
 table.table tr:nth-child(odd) {
     border: none;
-    text-align: center;
     background-color: lightgrey;
+}
+table.table td {
+    text-align: center;
 }
 table.table th {
     border: none;
