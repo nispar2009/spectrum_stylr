@@ -212,15 +212,6 @@ input[type=checkbox].form {
     transition: 0.2s;
     box-shadow: 0 4px 10px 0 grey;
 }
-.card-type {
-    display: block;
-    padding: 5px;
-    box-sizing: border-box;
-    border: 2px solid lightgrey;
-}
-.card-img {width: 100%;}
-.card-img-type {padding: 0 0; border: 2px solid lightgrey;}
-
 .text-right {
     text-align: right;
 }
