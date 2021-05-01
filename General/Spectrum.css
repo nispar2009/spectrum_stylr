@@ -44,10 +44,6 @@ body {
     color: white;
     background-color: grey;
 }
-.btn.btn-sm {
-    padding: 7px 15px;
-    font-size: 7px;
-}
 .text-red {
     color: red;
 }
@@ -463,6 +459,12 @@ input.form.form-line {
     border-right: none;
 }
 textarea.form.form-line {
+    border-bottom: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+select.form.form-line {
     border-bottom: 2px solid black;
     border-top: none;
     border-left: none;
