@@ -325,8 +325,12 @@ body {
     select.form {width: 300px;}
     textarea.form {width: 300px;}
     table.table td, table.table th {padding: 10px 25px;}
+    table.table-active td, table.table th {padding: 10px 25px;}
+    table.table-striped td, table.table th {padding: 10px 25px;}
 }
 @media only screen and (min-width: 1025px) {
+    table.table-active td, table.table th {padding: 10px 50px;}
+    table.table-striped td, table.table th {padding: 10px 50px;}
     table.table td, table.table th {padding: 10px 50px;}
     .nav-mobile {display: none}
 }
