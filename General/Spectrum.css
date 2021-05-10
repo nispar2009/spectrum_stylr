@@ -356,6 +356,7 @@ body {
 .nav-mobile-brand:active {
     color: orange;
 }
+.form {background-color: transparent;}
 input.form {
     height: 50px;
     width: 300px;
