@@ -487,6 +487,12 @@ select.form.form-line {
     border-left: none;
     border-right: none;
 }
+.card {
+    width: 40%;
+    display: inline-block;
+    transition: 0.2s;
+    box-shadow: 0 4px 10px 0 grey;
+}
 .btn.btn-sm {
     font-size: 9px;
     padding: 8px 20px;
