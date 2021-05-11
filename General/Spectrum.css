@@ -487,3 +487,6 @@ select.form.form-line {
     border-left: none;
     border-right: none;
 }
+.btn.btn-sm {
+    font-size: 9px;
+}
