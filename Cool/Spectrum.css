@@ -200,3 +200,10 @@ input[type=checkbox].form {
 
 .link {color: blue;}
 .link:hover {color: darkblue;}
+
+.card {
+    width: 40%;
+    display: inline-block;
+    transition: 0.2s;
+    box-shadow: 0 4px 10px 0 grey;
+}
