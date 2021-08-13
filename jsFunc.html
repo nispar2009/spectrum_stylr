@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="Dark/Spectrum.css">
     <script src="Spectrum.js"></script>
 </head>
+
 <body>
     <header>
         <div class="nav-desktop">
@@ -50,7 +52,7 @@
                     <a class="hover-link" href="themes.html#general">General</a>
                     <br />
                     <a class="hover-link" href="themes.html#modern">Modern</a>
-                <br /><a class="hover-link" href="themes.html#dark">Dark</a>
+                    <br /><a class="hover-link" href="themes.html#dark">Dark</a>
                 </div>
             </div>
         </div>
@@ -66,32 +68,48 @@
         </div>
     </header>
 
-    <p>We can create elegant sections using SpectrumStylr</p>
-    <p>To create a section using the General Code, type the following:</p>
+    <p>There are various awesome functions in our Spectrum.js file. Here they are:</p>
+    <br /><br />
+    For the JS files, type: &lt;script src="https://nispar2009.github.io/spectrum_stylr/Spectrum.js">&lt;/script>
+
+    <p>To redirect to a new page, type this:</p>
     <div class="section-bg">
-        &lt;div class="section-dark | section-light">
-        <br>
-        &lt;h2 class="heading">
-        <br>
-        &lt;p>...&lt;/p>
-        <br>
-        &lt;a href="...">&lt;button class="btn">...&lt;/button>&lt;/a>
-        <br>
-        &lt;/div>
+        &lt;button class="btn" onclick="redirect('<i>http://www.example.com</i>')">...&lt;/button>
     </div>
-    <p>To create a section using other themes, type the following:</p>
+
+    <br />
+
+    <p>Setting value of elements:</p>
+
     <div class="section-bg">
-        &lt;div class="section-bg | section-blank">
-        <br>
-        &lt;h2 class="heading">
-        <br>
-        &lt;p>...&lt;/p>
-        <br>
-        &lt;a href="...">&lt;button class="btn">...&lt;/button>&lt;/a>
-        <br>
-        &lt;/div>
+        &lt;button class="btn" onclick="setValue(<i>demo</i>, '<i>You clicked me!</i>')"><i>Click me</i>&lt;/button>
+        <br />
+        &lt;p id="<i>demo</i>"&gt;&lt;/p&gt;
     </div>
-    
+
+    <p>Getting input:</p>
+
+    <div class="section-bg">
+        &lt;input type="text" class="form" placeholder="Your name..." name="nm" id="nm"&gt;
+        &lt;button class="btn" onclick="console.log(getValue('nm'))"><i>Click me</i>&lt;/button>
+    </div>
+
+    <p><b>Note:</b> This might not work for radio buttons and checkboxes.</p>
+    <p><b>Note:</b> It can also be used alongside "setValue". This is demonstrated in the following snippet.</p>
+
+    <div class="section-bg">
+        &lt;input type="text" class="form" placeholder="Your name..." name="nm" id="nm"&gt;
+        <br />
+        &lt;button class="btn" onclick="setValue('<i>hi</i>', 'Hi, ' + getValue('nm') + '!')"><i>Enter</i>&lt;/button>
+        <br />
+        &lt;p id="<i>hi</i>"&gt;&lt;/p&gt;
+    </div>
+
+    <p>Output:</p>
+
+    <iframe src="testSpectrum/test.html" style="width: 90%; height: 200px; outline: none; border: none;"></iframe>
+
+    <br />
     <br />
 
     <footer class="footer">
@@ -100,4 +118,5 @@
         <a class="footer-link" href="themes.html">Themes</a>
     </footer>
 </body>
+
 </html>
