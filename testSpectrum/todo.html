@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="../General/Spectrum.css">
+    <script src="../Spectrum.js"></script>
+    <script>
+        let tasks = []
+        function add(task) {
+            tasks.push(task)
+            const taskAdd = document.getElementById("task")
+            taskAdd.value = ""
+        }
+        function update() {
+            const myUl = document.getElementById("myUl")
+            myUl.innerHTML = ""
+            for (const item of tasks) {
+                myUl.innerHTML += "<li>" + item + "</li>"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1 class="text-blue">Todo</h1>
+
+    <input type="text" name="task" id="task" placeholder="Your task..." class="form form-line">
+    <button type="submit" class="btn btn-blue-outline" onclick="add(getInput('task')); update()">Add</button>
+    
+    <ul id="myUl"></ul>
+</body>
+
+</html>
