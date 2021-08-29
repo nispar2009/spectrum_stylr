@@ -10,5 +10,14 @@ function setValue(id, val) {
 }
 function getInput(id) {
     const inp = document.getElementById(id).value
-    return(inp)
+    return (inp)
+}
+function filterList(arr, val) {
+    let newArr = []
+    for (const item of arr) {
+        if (item.toLowerCase().includes(val.toLowerCase())) {
+            newArr.push(item)
+        }
+    }
+    return (newArr)
 }
