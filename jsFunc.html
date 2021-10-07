@@ -127,7 +127,7 @@
         <br />
         let tasks = []
         <br />
-        function add(task) {
+        add = task => {
         <br />
         tasks.push(task)
         <br />
@@ -135,7 +135,7 @@
         <br />
         }
         <br />
-        function update() {
+        update = () => {
         <br />
         const myUl = document.getElementById("myUl")
         <br />
@@ -151,6 +151,8 @@
         <br />
         &lt;/script&gt;
     </div>
+
+    <p><b>Note:</b> We are using arrow functions in all our examples.</p>
 
     <p>Output:</p>
 
@@ -192,7 +194,7 @@
         <br />
         &lt;script&gt;
         <br />
-        function update(arr) {
+        update = arr => {
         <br />
         document.getElementById("myUl").innerHTML = ""
         <br />

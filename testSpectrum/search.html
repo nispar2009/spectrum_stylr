@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../General/Spectrum.css">
     <script src="../Spectrum.js"></script>
     <script>
-        function update(arr) {
+        update = arr => {
             document.getElementById("myUl").innerHTML = ""
             for (const item of arr) {
                 document.getElementById("myUl").innerHTML += "<li>" + item + "</li>"

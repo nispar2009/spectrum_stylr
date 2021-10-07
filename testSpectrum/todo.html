@@ -10,12 +10,12 @@
     <script src="../Spectrum.js"></script>
     <script>
         let tasks = []
-        function add(task) {
+        add = task => {
             tasks.push(task)
             const taskAdd = document.getElementById("task")
             taskAdd.value = ""
         }
-        function update() {
+        update = () => {
             const myUl = document.getElementById("myUl")
             myUl.innerHTML = ""
             for (const item of tasks) {
