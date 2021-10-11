@@ -11,3 +11,12 @@ filterList = (arr, val) =>  {
     }
     return (newArr)
 }
+filterListObject = (arr, val, prop) =>  {
+    let newArr = []
+    for (const item of arr[prop]) {
+        if (item.toLowerCase().includes(val.toLowerCase())) {
+            newArr.push(item)
+        }
+    }
+    return (newArr)
+}

@@ -82,20 +82,21 @@
     <p>Setting value of elements:</p>
 
     <div class="section-bg">
-        &lt;button class="btn" onclick="setValue(<i>demo</i>, '<i>You clicked me!</i>')"><i>Click me</i>&lt;/button>
+        &lt;button class="btn" onclick="setValue('<i>demo</i>', '<i>You clicked me!</i>')"><i>Click me</i>&lt;/button>
         <br />
         &lt;p id="<i>demo</i>"&gt;&lt;/p&gt;
     </div>
+    <p><b>Note:</b> The format is "setValue('<i>idOfElementToBeSet</i>', '<i>value</i>')".</p>
 
     <p>Getting input:</p>
 
     <div class="section-bg">
-        &lt;input type="text" class="form" placeholder="Your name..." name="nm" id="nm"&gt;
-        &lt;button class="btn" onclick="console.log(getinput('nm'))"><i>Click me</i>&lt;/button>
+        &lt;input type="text" class="form" placeholder="Your name..." name="<i>nm</i>" id="<i>nm</i>"&gt;
+        &lt;button class="btn" onclick="console.log('Hi, ' + getinput('<i>nm</i>' + '!'))"><i>Click me</i>&lt;/button>
     </div>
 
     <p><b>Note:</b> This might not work for radio buttons and checkboxes.</p>
-    <p><b>Note:</b> The format is "getInput('<i>id</i>')".</p>
+    <p><b>Note:</b> The format is "getInput('<i>idOfField</i>')".</p>
     <p><b>Note:</b> It can also be used alongside "setValue". This is demonstrated in the following snippet.</p>
 
     <div class="section-bg">
@@ -116,9 +117,9 @@
     <div class="section-bg">
         &lt;h1 class="text-blue"&gt;Todo&lt;/h1&gt;
         <br />
-        &lt;input type="text" name="task" id="task" placeholder="Your task..." class="form form-line"&gt;
+        &lt;input type="text" name="<i>task</i>" id="<i>task</i>" placeholder="Your task..." class="form form-line"&gt;
         <br />
-        &lt;button type="submit" class="btn btn-blue-outline" onclick="add(getInput('task'));
+        &lt;button type="submit" class="btn btn-blue-outline" onclick="add(getInput('<i>task</i>'));
         update()"&gt;Add&lt;/button&gt;
         <br />
         &lt;ul id="myUl"&gt;&lt;/ul&gt;
@@ -209,6 +210,8 @@
         &lt;/script&gt;
     </div>
 
+    <p><b>Note:</b> The format of the "filterList()" function is "filterList(<i>array</i>, <i>thingToSearchFor</i>)".</p>
+    <p><b>Note:</b> You can also use "filterListObject()" to filter a list of ojects. the format is quite similar to that of "filterList". It is "filterListObject(<i>array</i>, '<i>thingToSearchFor</i>', 'propToSearch')". The property to search should also be a string.</p>
     <p><b>Note:</b> The format of the "filterList()" array is "filterList(<i>array</i>, <i>thingToSearchFor</i>)".</p>
 
     <p>Output:</p>
