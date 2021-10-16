@@ -13,8 +13,8 @@ filterList = (arr, val) =>  {
 }
 filterListObject = (arr, val, prop) =>  {
     let newArr = []
-    for (const item of arr[prop]) {
-        if (item.toLowerCase().includes(val.toLowerCase())) {
+    for (const item of arr) {
+        if (item[prop].toLowerCase().includes(val.toLowerCase())) {
             newArr.push(item)
         }
     }
