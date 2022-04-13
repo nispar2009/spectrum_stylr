@@ -18,6 +18,14 @@
         }
     </style>
     <script src="Spectrum.js"></script>
+    <script>
+        gen = () => {
+            const mainCol = getInput("mainCol")
+            const secondaryCol = getInput("secondaryCol")
+            const code = '@import url("https://fonts.googleapis.com/css?family=Roboto");<br> body {<br> font-family: Roboto;<br> margin: 0;<br> font-size: 18px;<br> }<br> .btn {<br> padding: 15px 40px;<br> cursor: pointer;<br> border: none;<br> font-size: 15px;<br> user-select: none;<br> text-decoration: none;<br> color: white;<br> outline: none;<br> background-color: dodgerblue;<br> }<br> .btn:hover {<br> transition: 0.2s;<br> background-color: blue;<br> }<br> .section-bg {<br> width: 100%;<br> overflow: hidden;<br> padding-top: 20px;<br> padding-bottom: 20px;<br> background-color: lightgrey;<br> }<br> .section-blank {<br> width: 100%;<br> overflow: hidden;<br> padding-top: 20px;<br> padding-bottom: 20px;<br> background-color: none;<br> }<br> h1.heading {<br> color: blue;<br> }<br> h2.heading {<br> color: dodgerblue;<br> }<br> .footer {<br> width: 100%;<br> display: block;<br> bottom: 0;<br> text-align: center;<br> color: white;<br> padding-top: 20px;<br> padding-bottom: 20px;<br> background-color: lightgrey;<br> }<br> .footer .footer-link {<br> color: dodgerblue;<br> }<br> .footer .footer-link:hover {<br> transition: 0.2s;<br> color: blue;<br> }<br> .nav-desktop {<br> overflow: hidden;<br> width: 100%;<br> display: block;<br> top: 0;<br> background-color: dodgerblue;<br> }<br> .nav-desktop-link {<br> color: white;<br> text-decoration: none;<br> display: block;<br> padding: 60px;<br> line-height: 50px;<br> text-align: center;<br> font-size: 30px;<br> position: relative;<br> }<br> .nav-desktop-link:hover {<br> background-color: blue;<br> }<br> .nav-desktop-item {<br>display: inline;<br>}<br> .nav-desktop-brand {<br> font-size: 40px;<br> }<br> .form {<br> outline: none;<br> background-color: lightgrey;<br> border: none;<br> }<br> input.form {<br> height: 50px;<br> width: 300px;<br> font-size: large;<br> }<br> .btn.btn-submit {<br>padding: 15px 100px}<br> textarea.form {<br> width: 300px;<br> font-size: large;<br> height: 100px;<br> resize: none;<br> }<br> select.form {<br> height: 50px;<br> width: 300px;<br> font-size: large;<br> }<br> @media only screen and (max-width: 1024px) {<br> .nav-desktop {<br>display: none;<br>}<br> .nav-mobile {<br> display: block;<br> overflow: hidden;<br> }<br> input.form {<br>width: 300px;<br>}<br> select.form {<br>width: 300px;<br>}<br> textarea.form {<br>width: 300px;<br>}<br> table.table td, table.table th {<br>padding: 10px 25px;<br>}<br> }<br> @media only screen and (min-width: 1025px) {<br> .nav-mobile {<br>display: none<br>}<br> table.table td, table.table th {<br>padding: 10px 50px;<br>}<br> }<br> .nav-mobile-brand {<br>float: left;<br> font-size: 40px;<br> color: dodgerblue;<br> text-decoration: none;<br>}<br> .nav-mobile-right {<br>float: right}<br> .nav-mobile-content {<br> display: none;<br> position: absolute;<br> min-width: 160px;<br> padding-right: 50px;<br> padding-top: 10px;<br> padding-left: 10px;<br> padding-bottom: 50px;<br> /* right: 0;<br> */ background-color: blue;<br> }<br> .nav-mobile-right .nav-mobile-content {<br>right: 0;<br>}<br> .nav-mobile-link {<br> color: white;<br> text-decoration: none;<br> display: block;<br> }<br> .nav-mobile-brand:active {<br> color: darkblue;<br> }<br> .hover-all {<br> display: inline-block;<br> }<br> .hover-content {<br> display: none;<br> position: absolute;<br> min-width: 160px;<br> padding-right: 50px;<br> padding-top: 10px;<br> padding-left: 10px;<br> padding-bottom: 50px;<br> background-color: dodgerblue;<br> color: white;<br> }<br> .hover-all:hover .hover-content {<br> display: block;<br> }<br> .hover-all .hover-content .hover-link:hover {<br> color: lightgrey;<br> transition: 0.2s;<br> }<br> .hover-all .hover-content .hover-link {<br> color: white;<br> font-display: block;<br> }<br> table.table {<br> border-collapse: collapse;<br> }<br> table.table td {<br> border: 4px solid dodgerblue;<br> text-align: center;<br> color: dodgerblue;<br> }<br> table.table th {<br> border: 4px solid blue;<br> text-align: center;<br> color: blue;<br> }<br> .col {<br>column-count: 2;<br>}<br> .n-m-show {<br>display: block}<br> input[type=radio].form {<br> width: initial;<br> height: initial;<br> }<br> input[type=checkbox].form {<br> width: initial;<br> height: initial;<br> }<br> .link {<br>color: dodgerblue;<br>}<br> .link:hover {<br>color: blue;<br>}<br> .card {<br> width: 40%;<br> display: inline-block;<br> transition: 0.2s;<br> box-shadow: 0 4px 10px 0 grey;<br> }<br>'
+            setValue("code", code)
+        }
+    </script>
 </head>
 
 <body>
@@ -75,7 +83,7 @@
                 <button class="btn" onclick="ShowContent()">...</button>
                 <div id="nav-mobile-content" class="nav-mobile-content">
                     <a href="docsHome.html" class="nav-mobile-link">Docs</a>
-                    <a href="themes.htmll class=" nav-mobile-link">Themes</a>
+                    <a href="themes.html class="nav-mobile-link">Themes</a>
                 </div>
             </div>
         </div>
@@ -97,6 +105,7 @@
     <button class="btn" onclick="redirect('#fun')">Fun</button>
     <button class="btn" onclick="redirect('#dark')">Dark</button>
     <button class="btn" onclick="redirect('#antique')">Antique</button>
+    <button class="btn" onclick="redirect('#gen')">Theme Generator</button>
 
     <br />
 
@@ -145,6 +154,17 @@
         <div class="section-bg">
             &lt;link rel="stylesheet" href="https://nispar2009.github.io/spectrum_stylr/Retro/Spectrum.css">
         </div>
+    </div>
+    <div id="gen" class="sec">
+        This is the theme generator, enter your own colors below to get the code&mdash;which you can later paste in your own CSS file. You can use the normal CDN link for the JS file, though.
+        <br><br>
+        <input type="color" id="mainCol" class="form form-line">
+        <br><br>
+        <input type="color" id="secondaryCol" class="form form-line">
+        <br><br>
+        <button class="btn" onclick="gen()">Gen</button>
+        <br><br>
+        <div id="code" class="section-bg">Code appears here</div>
     </div>
 
     <br />
